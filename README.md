@@ -62,4 +62,4 @@ This project was originally developed as part of my experience in the **Global C
 
 **Otioh Marie-Lynn Konan**
 AI Major & Cyberdefense Minor | Illinois Tech
-[LinkedIn](https://linkedin.com/in/otiohkonan) | [GitHub](https://github.com/<yourusername>)
+[LinkedIn](https://www.linkedin.com/in/otioh-konan) | [GitHub](https://github.com/Corianne1172)
