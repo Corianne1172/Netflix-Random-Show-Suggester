@@ -1,63 +1,65 @@
+# Netflix 🎥 Random Show Suggester
 
-# Netflix 🎥
+A front-end project where I built a feature prototype inspired by Netflix: a **Random Show Suggestion** tool. This feature lets users pick a genre or select “Random” to instantly get a show suggestion from that category. The project focuses on JavaScript logic, DOM manipulation, and creating an interactive user experience.
 
-## Contents
-- Introduction
-- Starter Code
-- Provided Functions
-- Deliverable
-- Extra Help (If Needed)
+---
 
-## Introduction
+## 🧠 What I Built
 
-For this milestone, you will collaborate with the Netflix development team to prototype a new feature: the random show suggestion. The team has already written code that presents a collection of shows in various genres, as well as code that displays a single show on the webpage. Your objective is to complete the two functions in script.js and ensure that the correct outcome is shown on the page based on the user's selection.
+I implemented the logic behind two core functions in `script.js`:
 
-The final feature should function as follows:
+1. **chooseRandomGenre()** — randomly selects one of the available genres (`drama`, `fantasy`, or `comedy`).
+2. **displayRandomShow(genre)** — displays a random show from the chosen genre or, if “Random” is selected, from any genre.
 
-When a user clicks on the dropdown menu labeled "Genres," they can make a selection. If they choose a specific genre, a random show from that genre will be displayed on the screen. If they select "Random," a show from any genre will be shown. Choosing "All" is already working.
+These functions interact with helper methods provided in `provided.js` to generate random numbers and render show titles dynamically on the page.
 
-The final user experience should function [like this](https://imgur.com/a/pQPkzI8).
+---
 
-## Starter Code
+## ⚙️ How It Works
 
-Take a look at the top of script.js. There are three arrays that correspond to our genres of drama, fantasy, and comedy shows. Each array holds five shows.
+* The app contains predefined arrays of shows for each genre.
+* When a user chooses a genre from the dropdown, the script picks a random index from that genre’s array using `getRandomNumber()`.
+* The chosen show is displayed on the webpage through the `displayShow()` function.
+* Selecting “Random” triggers `chooseRandomGenre()` first, then follows the same logic.
 
-You'll notice two empty functions have already been declared in script.js. To complete the Milestone, you'll add code to the body of each of these functions.
+---
 
-⚠️ Warning: Don't change the variables or names of functions! Changing them can cause problems with the end user experience.
+## 💻 Tech Stack
 
+* **HTML/CSS:** Structure and layout of the interface
+* **JavaScript:** Core functionality, DOM updates, randomization logic
 
-## Provided Functions
-The Netflix devs have written two helper functions you'll need to use to complete the feature. These functions are defined in `provided.js` but they can be called from `script.js`. 
+---
 
-> **🗒 Note:** The only file you'll need to edit to complete the project is `script.js`.
+## ▶️ Run the Project
 
-<hr>
+1. Clone the repository:
 
-1. `getRandomNumber(min, max)`
+   ```bash
+   git clone https://github.com/<yourusername>/Netflix-Random-Show-Suggester.git
+   cd Netflix-Random-Show-Suggester
+   ```
+2. Open `index.html` in your browser.
+3. Choose a genre or “Random” from the dropdown to test the feature.
 
-This function accepts two numbers: `min` and `max`. It returns a randomly generated number in between the supplied min and max (inclusive). Try calling `getRandomNumber(0, 4)` in the console a few times to see how it works.
-<hr>
+---
 
-2. `displayShow(show)`
+## 🎯 What I Learned
 
-This function accepts the name of a show (such as "The Witcher") and displays it on the page. It uses the _exact formatting_ of the strings in the arrays to find and display the correct show. Try running `displayShow("The Witcher")` and `displayShow("The Queen's Gambit")` in the console and check the page to see what happens.
+* Using helper functions to keep code modular and reusable
+* Implementing randomness and dynamic updates with the DOM
+* Testing browser interactivity and debugging UI behavior in real time
 
+---
 
-## Deliverable
+## 🙌 Acknowledgment
 
-Below are the requirements for each of the three functions you need to finish in `script.js`. 
+This project was originally developed as part of my experience in the **Global Career Accelerator**, which helped me strengthen my practical front-end development skills and build projects inspired by real-world features.
 
-### 1. **`chooseRandomGenre()`**
- 
-This function should return a random genre that is either "drama", "fantasy", or "comedy". You can use the provided `getRandomNumber()` function to randomly select one of the three possibilities.
+---
 
-<hr>
+## 👩🏾‍💻 Author
 
-### 2. **`displayRandomShow(genre)`**
-
-The parameter `genre` will be a string that is either "drama", "fantasy", "comedy", or "random". If the parameter is "random", you'll use the `chooseRandomGenre()` function from above to reassign the parameter to one of the three possibilities. Otherwise based on the `genre` parameter, you should display a random show from the correspondding array. 
-
-
-## Extra Help (If Needed)
-You have everything you need to get started and complete this task. You should try it on your own first! Use your decomposition skills to break each task down into smaller steps and don't hesitate to practice your Google Fu. If you're still having trouble, check out `HINTS.md` for some extra help.
+**Otioh Marie-Lynn Konan**
+AI Major & Cyberdefense Minor | Illinois Tech
+[LinkedIn](https://linkedin.com/in/otiohkonan) | [GitHub](https://github.com/<yourusername>)
